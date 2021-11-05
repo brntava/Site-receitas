@@ -68,6 +68,7 @@
 
 .slick-prev {
 	background-image: url('../img/voltar.png');
+	background-repeat: no-repeat;
 	border: none;
 	background-color: transparent;
 	height: 51px;
@@ -81,6 +82,7 @@
 
 .slick-next {
 	background-image: url('../img/proximo.png');
+	background-repeat: no-repeat;
 	border: none;
 	background-color: transparent;
 	height: 51px;
@@ -250,3 +252,203 @@ td:hover{
 	text-shadow: 1px 1px 1px black;
 }
 
+/* Tablet */
+
+@media (max-width: 650px){
+
+	body{
+		width: 100%;
+		background-color: yellow;
+	}
+
+	.titulo{
+		margin: 0 auto;
+		margin-left: 30%;
+	}
+
+	.menu{
+		height: 150px;
+	}
+
+	.menu li{
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-left: 10px;
+		
+	}
+
+	.menu li a{
+		align-items: center;
+	}
+
+	.busca{
+		position: absolute;
+		top: 20%;
+		right: 30%;
+	}
+
+	.busca input{
+		width: 250px;
+	}
+
+	.slider-principal img{
+		width: 100%;
+	}
+
+	.slick-dots{
+		top: 80%;
+	}
+
+	.slick-dots li button{
+		border: 2px solid #FFFAFA;
+		width: 20px;
+		height: 20px;
+	}
+
+	.slick-prev{
+		position: absolute;
+		top: 40%;
+		width: 17px;
+		height: 40px;
+	}
+
+	.slick-next{
+		position: absolute;
+		top: 40%;
+		width: 17px;
+		height: 40px;
+	}
+
+	.tabela{
+		width: 90%;
+	}
+
+	.content1, .content2, .content3 ,.content4, .content5{
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-left: 110px;
+		text-align: left;
+
+	}
+
+	#title1, #title2, #title3{
+		text-align: center;
+	}
+
+	#subtitulo{
+		margin-left: 20px;
+	}
+
+	.complementos{
+		margin-left: 25px;
+		width: 45%;
+		margin-top: 30px;
+	}
+
+	.footer{
+		height: 200px;
+	}
+
+}
+
+/* Cell */
+
+@media (max-width: 500px){
+
+	body{
+		background-color: blue;
+	}
+
+	.header-1{
+		width: 100%;
+		height: 100px;
+	}
+
+	.titulo h1{
+		margin-top: 30px;
+	}
+
+	.menu{
+		height: 150px;
+	}
+
+	.menu li{
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-left: 10px;
+		
+	}
+
+	.menu li a{
+		align-items: center;
+	}
+
+	.busca{
+		position: absolute;
+		top: 22%;
+		right: 30px;
+	}
+
+	.busca input{
+		width: 150px;
+	}
+
+	.slider-principal img{
+		width: 100%;
+		height: 160px;
+	}
+
+	.principal{
+		height: 500px;
+	}
+
+	.principal h1{
+		font-size: 25px;
+	}
+
+	.tabela{
+		width: 80%;
+	}
+
+	.tabela td{
+		height: 80px;
+	}
+
+	#title0{
+		font-size: 25px;
+	}
+
+	.content1, .content2, .content3, .content4, .content5{
+		margin: 0 auto;
+		margin-left: 50px;
+		margin-top: 50px;
+		width: 60%;
+		height: 30%;
+	}
+
+	#title1, #title2, #title3{
+		text-align: center;
+	}
+
+	#subtitulo{
+		margin: 0 auto;
+		margin-left: 60px;
+	}
+
+	.content1 ul,.content2 ul, .content3 ul, .content4 ul, .content5 ul{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.content1 ul li, .content2 ul li, .content3 ul li, .content4 ul li, .content5 ul li{
+		font-size: 18px;
+		margin-left: 20px;
+	}
+
+	.complementos{
+		width: 40%;
+	}
+
+
+}
