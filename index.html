@@ -9,14 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<title>Receitas</title>
 </head>
+
 <body>
-	<header class="header-1">
-		<div class="titulo">
-			<h1><strong>Receitas Caseiras</strong></h1>
+
+	<header>
+		<div class="header-1">
+			<h1 class="titulo"><strong>Receitas Caseiras</strong></h1>
 		</div>
 		
-	</header>
-	<main>
 		<div class="menu">
 			<ul>
 				<li><a href="">Home</a></li>
@@ -25,12 +25,14 @@
 				<li><a href="">Fale Conosco</a></li>
 			</ul>
 
-			<div class="busca">
-				<input type="text" placeholder="Pesquisar">
+			<div class="search">
+				<input type="text" id="txtbusca" placeholder="Pesquisar" />
+				<button type="submit" id="botao">a</button>
 			</div>
 		</div>
-	</main>
 
+	</header>
+	
 	<div class="slider-principal">
 		<div>
 			<img src="./img/banner.png" width="1920px"/>
@@ -40,9 +42,8 @@
 		</div>
 	</div>
 
-
-	<div class="main-1">
-
+	<section class="section">
+		
 		<div class="principal">
 			
 			<h1>Receitas Rapidas e Faceis</h1>
@@ -75,7 +76,11 @@
 
 		<h1 id="title0">Receitas Principais</h1>
 
-		<div class="content1">
+	<main>
+
+		<div class="container">
+
+		<div class="cont1">
 			<h1 id="title1">Miojo Gourmet</h1>
 			<ul>
 				<p id="subtitulo"><strong>Ingredientes</strong> </p>
@@ -87,7 +92,7 @@
 			</ul>
 		</div>
 
-		<div class="content2">
+		<div class="cont1">
 			<h1 id="title2">Guacamole</h1>
 
 			<ul>
@@ -101,36 +106,63 @@
 			</ul>
 		</div>
 
-		<div class="content3">
+		<div class="cont2">
 			<h1 id="title3">Pastel </h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere ex,alias quis pariatur?</p>
+			<ul>
+				<p id="subtitulo"><strong>Ingredientes</strong> </p>
+				<li>1 abacate médio</li>
+				<li>1 cebola pequena</li>
+				<li>1 tomate médio </li>
+				<li>Meio limão </li>
+				<li>Pimenta em gota (opcional)</li>
+				<li>Sal a gosto </li>
+			</ul>
 		</div>
 
-		<div class="content4">
+		<div class="cont3">
 			<h1 id="title3">Item D</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere ex,alias quis pariatur?</p>
+			<ul>
+				<p id="subtitulo"><strong>Ingredientes</strong> </p>
+				<li>1 abacate médio</li>
+				<li>1 cebola pequena</li>
+				<li>1 tomate médio </li>
+				<li>Meio limão </li>
+				<li>Pimenta em gota (opcional)</li>
+				<li>Sal a gosto </li>
+			</ul>
 		</div>
 
-		<div class="content5">
+		<div class="cont3">
 			<h1 id="title3">Item E</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere ex,alias quis pariatur?</p>
+			<ul>
+				<p id="subtitulo"><strong>Ingredientes</strong> </p>
+				<li>1 abacate médio</li>
+				<li>1 cebola pequena</li>
+				<li>1 tomate médio </li>
+				<li>Meio limão </li>
+				<li>Pimenta em gota (opcional)</li>
+				<li>Sal a gosto </li>
+			</ul>
 		</div>
 
-			
 		</div>
+	</main>
 
 	<footer class="footer">
 
-		<div class="complementos">
-			<h3><b>Sobre</b></h3>
-			<p>Site de receitas faceis para fazer em casa.</p>
-			<p>Meu primeiro site responsivo</p>
-		</div>
+		<div class="container2">
 
-		<div class="complementos">
-			<h3><b>Contatos</b></h3>
-			<p>(11) 0000-0000</p>
-			<p>(11) 0000-0000</p>
+			<div class="complementos">
+				<h3><b>Sobre</b></h3>
+				<p>Site de receitas faceis para fazer em casa.</p>
+				<p>Meu primeiro site responsivo</p>
+			</div>
+
+			<div class="complementos">
+				<h3><b>Contatos</b></h3>
+				<p>(11) 0000-0000</p>
+				<p>(11) 0000-0000</p>
+			</div>
 		</div>
 
 	</footer>

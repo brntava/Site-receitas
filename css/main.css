@@ -13,22 +13,25 @@
 }
 
 .titulo {
-	color: #A52A2A;
-	font-size: 12px;
-	padding: 10px;
-	margin-left: 416px;
 	font-family: sans-serif;
+	color: #A52A2A;
+	font-size: 25px;
+	padding: 10px;
+	margin-left: 400px;
 }
 
 
-.menu {
+.menu{
 	width: 100%;
 	height: 80px;
 	background-color: #FFFAFA;
-	display: flex;
-	justify-content: center;
 }
 
+.menu ul{
+	float: left;
+	margin-left:38%;
+	max-width: 500px;
+}
 
 .menu li {
 	display: inline-block;
@@ -50,19 +53,35 @@
 	color: #A52A2A;
 }
 
-.busca {
-	margin-left: 50px;
+.search{
+	width: 170px;
+	height: 30px;
+	float: right;
+	margin-right: 20%;
 	margin-top: 30px;
 }
 
-.busca input {
-	margin-top: 0px;
-	height: 10px;
-	padding: 5px;
+.search input{
+	border: 2px solid black;
+	padding-left: 10px;
+	width: 150px;
+}
+
+
+.search button{
+	color: transparent;
+	width: 30px;
+	height: 20px;
 	background-image: url('../img/buscar.png');
 	background-repeat: no-repeat;
-	background-position: 95%;
+	background-position: 3px;
+	background-color:transparent;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
 }
+
+
 
 /* z index sobrepoe outras camas */
 
@@ -129,6 +148,7 @@ body{
 
 /* Tabela */
 
+
 .principal{
 	width: 100%;
 	height: 600px;
@@ -141,6 +161,7 @@ body{
 	padding-top: 100px;
 	padding-bottom: 70px;
 	text-transform: uppercase ;
+	font-size: 30px;
 }
 
 
@@ -165,59 +186,103 @@ td:hover{
 
 #title0{
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 50px;
 	text-transform: uppercase;
+	font-size: 30px;
 }
 
 /* Conteudos */
 
-.content1,.content2, .content4, .content5{
-	width: 400px;
+.container{
+	max-width: 1300px;
+	border: 0px solid black;
+	margin: 0 auto;
+
+	padding-top: 50px;
+
+	display: grid;
+	grid-gap: 50px;
+	grid-template-areas: 
+	"cont1 cont1"
+	"cont2 cont2"
+	"cont3 cont3"
+	"footer footer";
+}
+
+.cont1{
+	max-width: 500px;
+	min-width: 450px;
 	height: 500px;
 	background-color: #FAF0E6;
-	display: inline-grid;
-	margin-top: 100px;
-	margin-left:17%;
-	padding: 35px;
 	border-radius: 10%;
 	box-shadow: 3px 3px 3px grey ;
+
+	margin: 0 auto;
+
+	grid-area: "cont1";
+	grid-row: cont1 ;
 }
 
-.content3{
-	width: 400px;
-	height: 450px;
+.cont2{
+	max-width: 500px;
+	min-width: 450px;
+	height: 500px;
 	background-color: #FAF0E6;
-	display: inline-grid;
-	margin-top: 80px;
-	margin-left:715px;
-	padding: 35px;
 	border-radius: 10%;
 	box-shadow: 3px 3px 3px grey ;
+
+	margin-left: 65%;
+
+	grid-area: "cont2";
+	grid-row: cont2 ;
 }
 
-.content1:hover, .content2:hover, .content3:hover, .content4:hover, .content5:hover{
+.cont3{
+	max-width: 500px;
+	min-width: 450px;
+	height: 500px;
+	background-color: #FAF0E6;
+	border-radius: 10%;
+	box-shadow: 3px 3px 3px grey ;
+
+	margin: 0 auto;
+
+	grid-area: "cont3";
+	grid-row: cont3 ;
+}
+
+
+.cont1:hover, .cont2:hover, .cont3:hover{
 	box-shadow: 4px 4px 4px grey;
 	cursor: pointer;
 	border-radius: 10%;
 }
 
-#title1, #title2, #title3{
+#title1{
 	margin: 0 auto;
-	margin-top: 50px;
-	height: 50px;
+	padding-top: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#title2, #title3{
+	margin: 0 auto;
+	padding-top: 50px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 #subtitulo{
-	margin-left: 60px;
+	margin-left: 70px;
 	padding: 5px;
 	margin-bottom: 50px;
 }
 
-.content2 ul li, .content1 ul li{
+.cont2 ul li, .cont1 ul li, .cont3 ul li{
 	margin-top: 20px;
 }
 
-.content2 ul, .content1 ul{
+.cont2 ul, .cont1 ul, .cont3 ul{
     margin-left: 70px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -228,20 +293,25 @@ td:hover{
 .footer{
     background-color:#A52A2A;
     width: 100%;
-    height: 250px;
-	margin-top: 80px;
+    height: 200px;
+	margin-top: 50px;
+}
+
+.container2{
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-areas: "footer footer";
+	border: 0px solid blue;
 }
 
 
 .complementos{
-	display: inline-block;
-	float: left;
 	color: #FFFAFA;
 	font-size: 20px;
 	text-align: center;
-	margin-top: 30px;
-	margin-left: 400px;
 	text-shadow: 1px 1px 1px black;
+	padding-top: 20px;
 }
 
 .complementos p{
@@ -250,205 +320,80 @@ td:hover{
 	float: left;
 	margin-top: 20px;
 	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
 }
 
 /* Tablet */
 
-@media (max-width: 650px){
-
-	body{
-		width: 100%;
-		background-color: yellow;
-	}
-
+@media screen and (max-width: 950px){
+	
 	.titulo{
 		margin: 0 auto;
-		margin-left: 30%;
-	}
-
-	.menu{
-		height: 150px;
-	}
-
-	.menu li{
-		margin: 0 auto;
-		margin-top: 10px;
-		margin-left: 10px;
-		
-	}
-
-	.menu li a{
-		align-items: center;
-	}
-
-	.busca{
-		position: absolute;
-		top: 20%;
-		right: 30%;
-	}
-
-	.busca input{
-		width: 250px;
-	}
-
-	.slider-principal img{
 		width: 100%;
-	}
-
-	.slick-dots{
-		top: 80%;
-	}
-
-	.slick-dots li button{
-		border: 2px solid #FFFAFA;
-		width: 20px;
-		height: 20px;
-	}
-
-	.slick-prev{
-		position: absolute;
-		top: 40%;
-		width: 17px;
-		height: 40px;
-	}
-
-	.slick-next{
-		position: absolute;
-		top: 40%;
-		width: 17px;
-		height: 40px;
-	}
-
-	.tabela{
-		width: 90%;
-	}
-
-	.content1, .content2, .content3 ,.content4, .content5{
-		width: 50%;
-		margin: 0 auto;
-		margin-top: 50px;
-		margin-left: 110px;
-		text-align: left;
-
-	}
-
-	#title1, #title2, #title3{
 		text-align: center;
 	}
 
-	#subtitulo{
+
+	.menu ul{
+		margin: 0 auto;
 		margin-left: 20px;
 	}
 
-	.complementos{
-		margin-left: 25px;
-		width: 45%;
+	.search{
+		margin: 0 auto;
+		margin-right: 100px;
+		margin-top: 30px;
+		width: 20px;
+	}
+
+	.search input{
+		display: none;
+	}
+
+	.container{
+		display: block;
+	}
+
+	.cont1,.cont2,.cont3{
+		margin: 0 auto;
 		margin-top: 30px;
 	}
 
-	.footer{
-		height: 200px;
-	}
-
-}
 
 /* Cell */
 
-@media (max-width: 500px){
+@media screen and (max-width: 500px) {
 
-	body{
-		background-color: blue;
+	.menu ul{
+		margin: 0 auto;
 	}
 
-	.header-1{
-		width: 100%;
-		height: 100px;
-	}
-
-	.titulo h1{
+	.search{
+		margin: 0 auto;
+		float: right;
 		margin-top: 30px;
+		margin-right: 20px;
 	}
 
-	.menu{
-		height: 150px;
-	}
 
 	.menu li{
-		margin: 0 auto;
-		margin-top: 10px;
-		margin-left: 10px;
-		
+		padding-left: 10px;
+		font-size: 18px;
 	}
 
-	.menu li a{
-		align-items: center;
-	}
-
-	.busca{
-		position: absolute;
-		top: 22%;
-		right: 30px;
-	}
-
-	.busca input{
-		width: 150px;
-	}
-
-	.slider-principal img{
-		width: 100%;
-		height: 160px;
-	}
-
-	.principal{
-		height: 500px;
-	}
 
 	.principal h1{
-		font-size: 25px;
+		font-size: 28px;
 	}
 
-	.tabela{
-		width: 80%;
-	}
-
-	.tabela td{
+	td{
+		border: 1px solid green;
+		width: 100px;
 		height: 80px;
 	}
 
-	#title0{
-		font-size: 25px;
+
+	.cont1,.cont2,.cont3{
+		width: 50%;
 	}
-
-	.content1, .content2, .content3, .content4, .content5{
-		margin: 0 auto;
-		margin-left: 50px;
-		margin-top: 50px;
-		width: 60%;
-		height: 30%;
-	}
-
-	#title1, #title2, #title3{
-		text-align: center;
-	}
-
-	#subtitulo{
-		margin: 0 auto;
-		margin-left: 60px;
-	}
-
-	.content1 ul,.content2 ul, .content3 ul, .content4 ul, .content5 ul{
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.content1 ul li, .content2 ul li, .content3 ul li, .content4 ul li, .content5 ul li{
-		font-size: 18px;
-		margin-left: 20px;
-	}
-
-	.complementos{
-		width: 40%;
-	}
-
-
 }
